@@ -1,0 +1,54 @@
+.moon{
+	width: 300px;
+	height: 300px;
+	background: red;
+	margin: 100px auto;
+    position: relative;
+	transition: 1s all ease;
+    background: url(photo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moon:before{
+	content: '';
+	clear: both;
+	display: block;
+	width: 150px;
+	height: 300px;
+	background: teal;
+	top: 0;
+	left: 0;
+	position: absolute;
+	transition: 1s all ease;
+    background: url(door.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moon:after{
+	content: '';
+	clear: both;
+	display: block;
+	width: 150px;
+	height: 300px;
+	background: green;
+	top: 0;
+	right: 0;
+	position: absolute;
+	transition: 1s all ease;
+     background: url(123.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moon:hover:before{
+	left: -150px;
+	top: 0;
+	transform: rotatey(180deg);
+}
+.moon:hover:after{
+	right: -150px;
+	top: 0;
+	transform: rotatey(180deg);
+}
